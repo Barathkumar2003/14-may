@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+
+  <script>
+    // Challenge 1
+    const numbers = [1, 1, 2, 3, 5];
+    const newNumbers = numbers.map(number => number + 5)
+    console.log(newNumbers);
+
+  // Challenge 2
+  const words = ['planes', 'trains', 'automobiles']; 
+  const word = words.map(wor => wor.slice(0,-1));
+  console.log(word);
+
+
+  // Challenge 3
+  const firstLetter = ['planes', 'trains', 'automobiles'];
+  const first = firstLetter.map(fLetter => fLetter.slice(0,1));
+  console.log(first);
+
+   // Challenge 4
+   const capitalFirst = ['planes', 'trains', 'automobiles'];
+   const capital = capitalFirst.map(cFirst => cFirst.charAt(0).toUpperCase() + cFirst.slice(1));
+   console.log(capital);
+
+   // Challenge 5
+   const pets = ["goldfish", "dog", "turtle", "tiger"];
+   const petFind = pets.filter(pet => (pet.length <= 5));
+   console.log(petFind);
+
+    // Challenge 6
+    const pet = ["goldfish", "dog", "turtle", "tiger"];
+    const letterT = pet.filter(pets => pets.charAt(0)==='t');
+    console.log(letterT);
+
+
+  </script>
+</body>
+</html>
